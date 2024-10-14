@@ -3,9 +3,8 @@ import pandas as pd
 import plotly.express as px
 from streamlit import selectbox
 
-
 def pagina_principal():
-    st.title("Pagina Principal")
+    st.title("Página Principal")
     st.text("Bienvenido a la aplicación de demostración")
     st.write("Usa el menú de la izquierda para navegar entre las páginas")
 
