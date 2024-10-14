@@ -26,7 +26,6 @@ def graficos_interactivos():
     archivo_cargado = st.file_uploader("Elige un archivo CSV", type="csv", key="2")
     if archivo_cargado is not None:
         df = pd.read_csv(archivo_cargado)
-        st.write(df)
         st.write("Elige una columna para el eje X:")
         eje_x = selectbox("Eje X", df.columns)
         st.write("Elige una columna para el eje Y:")
